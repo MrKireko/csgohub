@@ -31,7 +31,30 @@ $(document).ready(function() {
 		setTimeout(function(){
 			$("#appbar").css("margin-top", "-16%")
 		}, 650);
-//		$("body").css("opacity", "0");
+	});
+	
+	$("#2").click(function(){
+		setTimeout(function(){
+			document.location = "index.html"
+		}, 1350);
+	});
+	
+	$("#3").click(function(){
+		setTimeout(function(){
+			document.location = "index.html"
+		}, 1350);
+	});
+	
+	$("#4").click(function(){
+		setTimeout(function(){
+			document.location = "index.html"
+		}, 1350);
+	});
+	
+	$("#5").click(function(){
+		setTimeout(function(){
+			document.location = "index.html"
+		}, 1350);
 	});
 	
 });
