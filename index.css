@@ -1,0 +1,95 @@
+@font-face {
+	font-family: 'Roboto';
+	src: url("Roboto-Regular.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto-Light';
+	src: url("Roboto-Light.ttf");
+}
+
+@font-face {
+	font-family: 'Roboto-Thin';
+	src: url("Roboto-Thin.ttf");
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p, a, h1, h2, h3, h4, h5 {
+	font-family: Roboto;
+}
+
+body {
+	background-color: #455a64;
+}
+
+#appbar {
+	background-color: #ff5722;
+	height: 15%;
+	min-height: 27px;
+	display: block;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#ttl {
+	font-family: Roboto-Thin;
+	font-weight: bold;
+	color: #fff;
+	font-size: 8vh;
+	cursor: default;
+	display: inline-block;
+	float: left;
+	margin-left: 1vh;
+	padding-top: 2.5vh !important;
+	transition: 0.5s margin-left;
+}
+
+#ttl::-moz-selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#ttl::selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#openbutton {
+	text-align: center;
+	display: inline-block;
+    transform: rotate(90deg);
+	margin: 2vh;
+	margin-left: 3vh;
+	padding-bottom: 2vh;
+	padding-right: 2.7vh;
+	padding-left: 2.8vh;
+	padding-top: 1.2vh;
+	font-size: 6vh;
+	color: #bf360c;
+	cursor: pointer;
+	border-radius: 3px;
+	transition: 0.1s background-color;
+	float: left;
+}
+
+#openbutton::-moz-selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#openbutton::selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#openbutton:hover {
+	background-color: #f4511e;
+	transition: 0.1s background-color;
+}
+
+#openbutton:active {
+	background-color: #d84315;
+}
+
+#openbutton:active + #ttl {
+	transition: 0.5s margin-left;
+}
