@@ -2,12 +2,14 @@ $(document).ready(function() {
 	
 	navopen = false;
 	
-	$("#openbutton").mouseup(function(){
+	$("#openbutton").click(function(){
 		if (navopen) {
 			$("#ttl").css("margin-left", "1vh");
+			$("#sidenav").css("margin-left", "-26%");
 			navopen = false;
 		} else {
-			$("#ttl").css("margin-left", "15%");
+			$("#ttl").css("margin-left", "19%");
+			$("#sidenav").css("margin-left", "0px");
 			navopen = true;
 		}
 	});

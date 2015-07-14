@@ -24,6 +24,7 @@ p, a, h1, h2, h3, h4, h5 {
 
 body {
 	background-color: #455a64;
+	overflow: hidden;
 }
 
 #appbar {
@@ -66,11 +67,13 @@ body {
 	padding-left: 2.8vh;
 	padding-top: 1.2vh;
 	font-size: 6vh;
-	color: #bf360c;
+	color: rgba(0, 0, 0, 0.3);
 	cursor: pointer;
 	border-radius: 3px;
 	transition: 0.1s background-color;
 	float: left;
+	transition: 0.5s margin-left;
+	z-index: 1;
 }
 
 #openbutton::-moz-selection {
@@ -82,14 +85,26 @@ body {
 }
 
 #openbutton:hover {
-	background-color: #f4511e;
+	background-color: rgba(0, 0, 0, 0.05);
 	transition: 0.1s background-color;
 }
 
 #openbutton:active {
-	background-color: #d84315;
+	background-color: rgba(0, 0, 0, 0.13);
+	transition: 0.5s margin-left;
 }
 
 #openbutton:active + #ttl {
 	transition: 0.5s margin-left;
+}
+
+#sidenav {
+	background-color: #00695c;
+	width: 25%;
+	height: 100%;
+	left: 0;
+	position: fixed;
+	margin-left: -26%;
+	transition: 0.5s margin-left;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
