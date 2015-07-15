@@ -211,7 +211,7 @@ body {
 	font-size: 4.8vh;
 	margin-left: 3vh;
 	padding-top: 2.5vh !important;
-	transition: margin-left 0.5s;
+	transition: margin-left 0.5s, margin-top 0.5s;
 }
 
 #ttl3::-moz-selection {
@@ -224,6 +224,7 @@ body {
 
 #cont {
 	margin-top: 1vh;
+	transition: margin-top 1s;
 }
 
 .listing .img {

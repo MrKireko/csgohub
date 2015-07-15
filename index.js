@@ -27,36 +27,40 @@ $(document).ready(function() {
 		$("#sidenav").css("margin-left", "-26%");
 		navopen = false;
 		setTimeout(function(){
-			$("#openbutton").css("margin-top", "-16%")
-			$("#ttl").css("margin-top", "-16%")
+			$("#cont").css("margin-top", "100%");
 		}, 300);
 		setTimeout(function(){
-			$("#appbar").css("margin-top", "-16%")
-		}, 650);
+			$("#openbutton").css("margin-top", "-16%");
+			$("#ttl").css("margin-top", "-16%");
+			$("#ttl3").css("margin-left", "-25%")
+		}, 600);
+		setTimeout(function(){
+			$("#appbar").css("margin-top", "-16%");
+		}, 900);
 	});
 	
 	$("#2").click(function(){
 		setTimeout(function(){
 			document.location = "index.html"
-		}, 1350);
+		}, 1650);
 	});
 	
 	$("#3").click(function(){
 		setTimeout(function(){
 			document.location = "index.html"
-		}, 1350);
+		}, 1650);
 	});
 	
 	$("#4").click(function(){
 		setTimeout(function(){
 			document.location = "index.html"
-		}, 1350);
+		}, 1650);
 	});
 	
 	$("#5").click(function(){
 		setTimeout(function(){
 			document.location = "index.html"
-		}, 1350);
+		}, 1650);
 	});
 	
 	$(".listing").mouseenter(function(){
