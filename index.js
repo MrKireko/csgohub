@@ -5,6 +5,7 @@ $(document).ready(function() {
 	$("#openbutton").click(function(){
 		if (navopen) {
 			$("#ttl").css("margin-left", "1vh");
+//			$("#ttl3").css("margin-left", "3vh");
 			$("#sidenav").css("margin-left", "-26%");
 			navopen = false;
 			setTimeout(function(){
@@ -12,6 +13,7 @@ $(document).ready(function() {
 			}, 300);
 		} else {
 			$("#ttl").css("margin-left", "19%");
+//			$("#ttl3").css("margin-left", "26.5%");
 			$("#sidenav").css("margin-left", "0px");
 			navopen = true;
 			setTimeout(function(){
@@ -55,6 +57,18 @@ $(document).ready(function() {
 		setTimeout(function(){
 			document.location = "index.html"
 		}, 1350);
+	});
+	
+	$(".listing").mouseenter(function(){
+		$(".arrow", this).css("opacity", "0.45");
+	});
+	
+	$(".listing").mouseleave(function(){
+		$(".arrow", this).css("opacity", "0");
+	});
+	
+	$(".listing").mouseup(function(){
+		$(this).css("opacity", "0.54");
 	});
 	
 });
