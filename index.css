@@ -186,9 +186,74 @@ body {
 	cursor: default;
 }
 
-#cont {
+#main {
 	background-color: #455a64;
 	height: 100%;
 	width: 100%;
 	display: inline-block;
+}
+
+#toolbar {
+	height: 10%;
+	width: 100%;
+	background-color: #90a4ae;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3) inset, 0px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+#ttl3 {
+	float: left;
+	font-family: Roboto-Thin;
+	font-weight: bold;
+	opacity: 0.54 !important;
+	cursor: default;
+	display: inline-block;
+	font-size: 4.8vh;
+	margin-left: 3vh;
+	padding-top: 2.5vh !important;
+}
+
+#ttl3::-moz-selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#ttl3::selection {
+	background-color: rgba(0, 0, 0, 0);
+}
+
+#cont {
+	margin-top: 1vh;
+}
+
+.listing img {
+	width: 12vw !important;
+	margin-top: -3vh;
+}
+
+#i1, #i2, #i3, #i4, #i5, #i6, #i7, #i8, #i9, #i10, #i11, #i12 {
+	background-color: #cfd8dc;
+	width: 14vw;
+	height: 24vh;
+	display: inline-block;
+	margin: 2vh;
+	border-radius: 5px;
+	box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	cursor: pointer;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+#i1:hover, #i2:hover, #i3:hover, #i4:hover, #i5:hover, #i6:hover, #i7:hover, #i8:hover, #i9:hover, #i10:hover, #i11:hover, #i12:hover {
+	background-color: #eceff1;
+	box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.ittl {
+	font-size: 2.5vh;
+	opacity: 0.54;
+	margin-top: 1vh;
+}
+
+.mttl {
+	font-size: 2vh;
+	opacity: 0.54;
 }
