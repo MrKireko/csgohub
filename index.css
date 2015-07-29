@@ -77,6 +77,7 @@ body {
 	float: left;
 	transition: margin-left 0.5s, margin-top 0.7s;
 	z-index: 3;
+	position: relative;
 }
 
 #openbutton::-moz-selection {
